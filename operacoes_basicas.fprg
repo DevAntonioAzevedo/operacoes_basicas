@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-07-20 10:25:21 "/>
+        <attribute name="created" value="VVNFUjtERVNLVE9QLTNOR01JTDU7MjAyMy0wNy0yMDsiMTA6MDE6MjAgIjsyNTU2"/>
+        <attribute name="edited" value="VVNFUjtERVNLVE9QLTNOR01JTDU7MjAyMy0wNy0yMDsiMTA6MjU6MjEgIjsxOzI2NzE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, temp, resultado" type="Real" array="False" size=""/>
+            <output expression="&quot;Qual opera&#231;&#227;o voc&#234; deseja fazer? 1 Soma , 2 Subtra&#231;&#227;o , 3 Multiplica&#231;&#227;o , 4 Divis&#227;o&quot;" newline="True"/>
+            <input variable="temp"/>
+            <if expression="temp==1">
+                <then>
+                    <output expression="&quot;Digite o primeiro n&#250;mero: &quot;" newline="True"/>
+                    <input variable="a"/>
+                    <output expression="&quot;Digite o segundo n&#250;mero: &quot;" newline="True"/>
+                    <input variable="b"/>
+                    <assign variable="resultado" expression="a+b"/>
+                    <output expression="&quot;O resultado dessa soma &#233;: &quot; &amp;resultado" newline="True"/>
+                </then>
+                <else>
+                    <if expression="temp==2">
+                        <then>
+                            <output expression="&quot;Digite o primeiro n&#250;mero: &quot;" newline="True"/>
+                            <input variable="a"/>
+                            <output expression="&quot;Digite o segundo n&#250;mero: &quot;" newline="True"/>
+                            <input variable="b"/>
+                            <if expression="a&lt;b">
+                                <then/>
+                                <else/>
+                            </if>
+                            <assign variable="resultado" expression="a-b"/>
+                            <output expression="&quot;O resultado dessa subtra&#231;&#227;o &#233;: &quot; &amp;resultado" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="temp==3">
+                                <then>
+                                    <output expression="&quot;Digite o primeiro n&#250;mero: &quot;" newline="True"/>
+                                    <input variable="a"/>
+                                    <output expression="&quot;Digite o segundo n&#250;mero: &quot;" newline="True"/>
+                                    <input variable="b"/>
+                                    <assign variable="resultado" expression="a*b"/>
+                                    <output expression="&quot;O resultado dessa multiplica&#231;&#227;o &#233;: &quot; &amp;resultado" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="temp==4">
+                                        <then>
+                                            <output expression="&quot;Digite o primeiro n&#250;mero: &quot;" newline="True"/>
+                                            <input variable="a"/>
+                                            <output expression="&quot;Digite o segundo n&#250;mero: &quot;" newline="True"/>
+                                            <input variable="b"/>
+                                            <assign variable="resultado" expression="a/b"/>
+                                            <output expression="&quot;O resultado dessa divis&#227;o &#233;: &quot; &amp;resultado" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Fim da opera&#231;&#227;o&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
