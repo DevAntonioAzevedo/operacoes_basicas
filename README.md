@@ -12,7 +12,7 @@ Caso o usuário digite uma opção inválida, o programa será encerrado.<br>
 
 ## 🖥️ Tecnológias usadas:
 ✏️ O Fluxogram foi utilizado o programa Flowgorithm.<br>
-💡  O Pseudocódigo foi utilizado o programa Portugol.
+💡   O Pseudocódigo foi utilizado o programa Portugol.
 
 ## 📧 Contato:
 antonio_azevedo@hotmail.com.br
